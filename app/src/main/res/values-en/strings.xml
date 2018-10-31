@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in">Sign in</string>
+    <string name="accept_t_n_c">Accept T &amp; C *</string>
+    <string name="forogt_password">Forogt Password?</string>
+    <string name="login">Login</string>
+    <string name="sign_up_tip">New User? Sign up here</string>
+    <string name="guest_user">Guest User</string>
+    <string name="password">Password</string>
+    <string name="signup">Register</string>
+    <string name="sign_up">Sign up</string>
+    <string name="phone_number">Mobile number</string>
+    <string name="email">Email</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="title_home">Home</string>
+    <string name="title_cart">My Cart</string>
+    <string name="title_search">Search</string>
+    <string name="title_account">My Account</string>
+    <string name="title_contact">Contact Us</string>
+    <string name="title_signout">Sign out</string>
+
+
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="profile">Profile</string>
+    <string name="my_orders">My Orders</string>
+    <string name="save_address">Save Address</string>
+    <string name="message">Message</string>
+    <string name="price">price</string>
+    <string name="title">title</string>
+    <string name="description">Description</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="buy_now">buy now</string>
+    <string name="aerabic">Aerabic</string>
+    <string name="english">English</string>
+    <string name="update">Update</string>
+    <string name="add_new_address">Add new address</string>
+    <string name="change">Change</string>
+    <string name="delete">delete</string>
+    <string name="add_new_shipping_address">Add New Shipping Address</string>
+    <string name="last_name">Last name</string>
+    <string name="first_name">First name</string>
+    <string name="address_line_1">Address Line 1</string>
+    <string name="address_line_2">Address Line 2</string>
+    <string name="city">City</string>
+    <string name="builfing_flat_no">Builfing/Flat No.</string>
+    <string name="pincode">Pincode</string>
+    <string name="save">save</string>
+    <string name="user_name">User name</string>
+</resources>

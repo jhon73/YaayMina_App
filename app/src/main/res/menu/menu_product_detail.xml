@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_sorting"-->
+        <!--android:icon="@drawable/ic_cart_footer_active"-->
+        <!--android:title="English"-->
+        <!--app:showAsAction="always"-->
+        <!--/>-->
+
+    <item
+        android:id="@+id/navigation_sorting"
+        android:title="Cart"
+        android:icon="@drawable/ic_cart_footer_active"
+        app:actionLayout="@layout/custom_cart_badge_layout"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/navigation_eng"
+        android:icon="@drawable/ic_english_logo"
+        android:title="Arabic"
+        app:showAsAction="always"/>
+</menu>

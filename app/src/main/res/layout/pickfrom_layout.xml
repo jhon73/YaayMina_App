@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/mainColor"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:text="@string/select_time" />
+
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:timePickerMode="spinner"
+        android:layout_height="wrap_content"
+        tools:targetApi="lollipop" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/validText"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:textColor="@color/price_color"
+            android:text="@string/please_select_time_after_30_minutes"/>
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:background="@color/mainColor"
+        android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_margin="@dimen/layout_margin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.12"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.07"
+            android:src="@drawable/ic_account_footer"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.03"/>
+
+        <TextView
+            android:id="@+id/profile_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:text="@string/profile"
+            android:gravity="center_vertical"
+            android:textColor="@color/light_grey_color"
+            style="@style/TextAppearance.AppCompat.Headline"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.001"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="@dimen/right_horizontal_margin"
+        android:background="@android:color/darker_gray"
+        tools:ignore="RtlHardcoded" />
+
+    <LinearLayout
+        android:id="@+id/order_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.12"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.07"
+            android:src="@drawable/ic_myorder"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.03"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:text="@string/my_orders"
+            android:gravity="center_vertical"
+            android:textColor="@color/light_grey_color"
+            style="@style/TextAppearance.AppCompat.Headline" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.001"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="@dimen/right_horizontal_margin"
+        android:background="@android:color/darker_gray"
+        tools:ignore="RtlHardcoded" />
+
+    <LinearLayout
+        android:id="@+id/address_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.12"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.07"
+            android:src="@drawable/ic_save_address"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.03"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:text="@string/save_address"
+            android:gravity="center_vertical"
+            android:textColor="@color/light_grey_color"
+            style="@style/TextAppearance.AppCompat.Headline"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.001"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="@dimen/right_horizontal_margin"
+        android:background="@android:color/darker_gray"
+        tools:ignore="RtlHardcoded" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.691"
+       />
+
+
+
+</LinearLayout>

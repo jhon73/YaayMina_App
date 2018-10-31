@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#feffff</color>
+    <color name="colorPrimaryDark">#FF058080</color>
+    <color name="colorAccent">#024d4d</color>
+
+    <color name="mainColor">#024d4d</color>
+
+    <color name="price_color">#f1414e</color>
+    <color name="remove_color">#24c24e</color>
+    <color name="light_grey_color">#333333</color>
+    <color name="product_list_color">#eeeded</color>
+
+    <color name="tabsScrollColor">#006400</color>
+
+    <color name="dispatched">#df9f17</color>
+    <color name="onway">#f2404e</color>
+    <color name="delivered">#26c34e</color>
+    <color name="pending">#ffde00</color>
+
+    <color name="black_trans">#ab0a0a0a</color>
+
+    <array name="tab_colors">
+        <item name="tab_1">#455C65</item>
+        <item name="tab_2">#00886A</item>
+        <item name="tab_3">#8B6B62</item>
+        <item name="tab_4">#6C4A42</item>
+        <item name="tab_5">#F63D2B</item>
+    </array>
+
+    <color name="color_tab_1">#455C65</color>
+    <color name="color_tab_2">#00886A</color>
+    <color name="color_tab_3">#8B6B62</color>
+    <color name="color_tab_4">#6C4A42</color>
+
+</resources>

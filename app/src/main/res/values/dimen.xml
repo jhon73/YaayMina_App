@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="left_horizontal_margin">20dp</dimen>
+    <dimen name="right_horizontal_margin">20dp</dimen>
+    <dimen name="layout_margin">10dp</dimen>
+    <dimen name="layout_semimargin">5dp</dimen>
+
+
+    <dimen name="top_magin">15dp</dimen>
+    <dimen name="bottom_magin">15dp</dimen>
+
+    <dimen name="layout_margin_lefttablet">50dp</dimen>
+    <dimen name="layout_margin_righttablet">50dp</dimen>
+
+    <dimen name="layout_margin_lefttablet_10">80dp</dimen>
+    <dimen name="layout_margin_righttablet_10">80dp</dimen>
+</resources>

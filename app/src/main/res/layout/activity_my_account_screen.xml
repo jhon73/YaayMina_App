@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_mainlayer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mainColor">
+
+                <TextView
+                    android:text="@string/title_account"
+                    android:id="@+id/textToolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/white"
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"/>
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:layout_margin="@dimen/layout_margin">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.12"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.07"
+                        android:src="@drawable/ic_account_footer"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.03"/>
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="0.9">-->
+
+                        <TextView
+                            android:id="@+id/profile_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/profile"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/light_grey_color"
+                            style="@style/TextAppearance.AppCompat.Medium"/>
+
+
+                    <!--</LinearLayout>-->
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.001"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="@dimen/right_horizontal_margin"
+                    android:background="@android:color/darker_gray"
+                    tools:ignore="RtlHardcoded" />
+
+                <LinearLayout
+                    android:id="@+id/order_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.12"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.07"
+                        android:src="@drawable/ic_myorder"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.03"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/my_orders"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/light_grey_color"
+                        style="@style/TextAppearance.AppCompat.Medium" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.001"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="@dimen/right_horizontal_margin"
+                    android:background="@android:color/darker_gray"
+                    tools:ignore="RtlHardcoded" />
+
+                <LinearLayout
+                    android:id="@+id/reorder_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.12"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.07"
+                        android:src="@drawable/re_order_list"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.03"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/my_reorder"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/light_grey_color"
+                        style="@style/TextAppearance.AppCompat.Medium" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.001"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="@dimen/right_horizontal_margin"
+                    android:background="@android:color/darker_gray"
+                    tools:ignore="RtlHardcoded" />
+
+
+                <LinearLayout
+                    android:id="@+id/address_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.12"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.07"
+                        android:src="@drawable/ic_save_address"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.03"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/save_address"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/light_grey_color"
+                        style="@style/TextAppearance.AppCompat.Medium"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.001"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="@dimen/right_horizontal_margin"
+                    android:background="@android:color/darker_gray"
+                    tools:ignore="RtlHardcoded" />
+
+                <LinearLayout
+                    android:id="@+id/card_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.12"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.07"
+                        android:src="@drawable/ic_saved_cards"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.03"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/saved_cards"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/light_grey_color"
+                        style="@style/TextAppearance.AppCompat.Medium"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.001"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="@dimen/right_horizontal_margin"
+                    android:background="@android:color/darker_gray"
+                    tools:ignore="RtlHardcoded" />
+
+                <LinearLayout
+                    android:id="@+id/pwd_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.12"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.07"
+                        android:src="@drawable/ic_paaword_lok"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.03"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/change_password"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/light_grey_color"
+                        style="@style/TextAppearance.AppCompat.Medium"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.33"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            style="@style/Widget.Design.BottomNavigationView">
+
+            <!--<android.support.design.widget.BottomNavigationView-->
+                <!--android:id="@+id/navigation"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--app:itemBackground="@drawable/bottom_nav_bg"-->
+                <!--app:itemTextColor="@android:color/white"-->
+                <!--app:itemIconTint="@android:color/white"-->
+                <!--app:menu="@menu/navigation"/>-->
+
+            <com.kiba.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:enable_label="true"
+                app:enable_icon="true"
+                app:enable_badge="true"
+                android:background="@drawable/bottom_nav_bg"
+                android:minHeight="?attr/actionBarSize"
+                app:label_textSize="12sp"
+                app:label_color_before="@android:color/darker_gray"
+                app:label_color_after="@android:color/white" />
+
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:backgroundTintMode="add"
+        android:background="@color/mainColor"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/menu_navigationdrawer"
+        app:itemIconTint="@android:color/white"
+        android:theme="@style/AppTheme.Toolbar.NavigationView" />
+
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.kiba.bottomnavigation.entity.IconView
+        android:id="@+id/navigation_item_iconView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="2dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true" />
+
+    <com.kiba.bottomnavigation.entity.LabelView
+        android:id="@+id/navigation_item_labelView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/navigation_item_iconView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        tools:text="text"
+        android:paddingBottom="2dp"/>
+    
+    <com.kiba.bottomnavigation.entity.BadgeView
+        android:id="@+id/navigation_item_badgeView"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@drawable/navigation_badge_background"
+        android:textColor="@color/navigation_badge_text_color"
+        android:gravity="center"
+        tools:text="12"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="4dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

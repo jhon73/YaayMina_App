@@ -1,0 +1,1433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.yaaymina.com.yaaymina.Activity.CheckOutScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_native"
+            style="@style/Widget.AppCompat.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center"
+            android:background="@color/mainColor">
+
+            <TextView
+                android:id="@+id/title_checkout"
+                style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Checkout"
+                android:textColor="@android:color/white" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <TabHost
+            android:id="@+id/tabHost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:clickable="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:clickable="false"/>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/seg_linearLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="@dimen/layout_margin"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1" />
+
+                            <info.hoang8f.android.segmented.SegmentedGroup xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/segmented2"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:layout_weight="0.8"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                segmentedgroup:sc_border_width="2dp"
+                                segmentedgroup:sc_checked_text_color="@android:color/white"
+                                segmentedgroup:sc_corner_radius="10dp"
+                                segmentedgroup:sc_tint_color="@color/mainColor">
+
+                                <RadioButton
+                                    android:id="@+id/button21"
+                                    style="@style/RadioButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="@dimen/layout_margin"
+                                    android:layout_weight="0.5"
+                                    android:text="@string/new_address" />
+
+                                <RadioButton
+                                    android:id="@+id/button22"
+                                    style="@style/RadioButton"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.5"
+                                    android:text="@string/saved_address" />
+                            </info.hoang8f.android.segmented.SegmentedGroup>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1" />
+
+                        </LinearLayout>
+
+
+                        <android.support.v4.widget.NestedScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/seg_linearLayout"
+                            android:layout_marginBottom="40dp"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="@dimen/layout_margin"
+                                android:layout_marginLeft="@dimen/layout_margin"
+                                android:layout_marginRight="@dimen/layout_margin"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layout_margin"
+                                    android:weightSum="1">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5">
+
+                                        <android.support.design.widget.TextInputEditText
+                                            android:id="@+id/firstName_textInput"
+                                            style="@style/TextAppearance.AppCompat.Medium"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:ellipsize="end"
+                                            android:hint="@string/first_name"
+                                            android:inputType="text"
+                                            android:maxLines="1"
+                                            android:textColor="@android:color/black" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5">
+
+                                        <android.support.design.widget.TextInputEditText
+                                            android:id="@+id/lastName_textInput"
+                                            style="@style/TextAppearance.AppCompat.Medium"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:ellipsize="end"
+                                            android:hint="@string/last_name"
+                                            android:inputType="text"
+                                            android:maxLines="1"
+                                            android:textColor="@android:color/black" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_margin="@dimen/layout_margin">
+
+                                    <android.support.design.widget.TextInputEditText
+                                        android:id="@+id/addressLine1_textInput"
+                                        style="@style/TextAppearance.AppCompat.Medium"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:ellipsize="end"
+                                        android:hint="@string/address_line_1"
+                                        android:inputType="text"
+                                        android:maxLines="1"
+                                        android:textColor="@android:color/black" />
+
+                                </android.support.design.widget.TextInputLayout>
+
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layout_margin">
+
+                                    <android.support.design.widget.TextInputEditText
+                                        android:id="@+id/addressLine2_textInput"
+                                        style="@style/TextAppearance.AppCompat.Medium"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:ellipsize="end"
+                                        android:hint="@string/address_line_2"
+                                        android:inputType="text"
+                                        android:maxLines="1"
+                                        android:textColor="@android:color/black" />
+
+                                </android.support.design.widget.TextInputLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layout_margin"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5">
+
+                                        <Spinner
+                                            android:id="@+id/spinner_city_item"
+                                            android:layout_width="match_parent"
+                                            android:layout_margin="5dp"
+                                            android:padding="@dimen/layout_margin"
+                                            style="@style/Widget.AppCompat.Spinner.Underlined"
+                                            android:layout_marginTop="@dimen/layout_margin"
+                                            android:layout_height="match_parent" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5">
+
+                                        <android.support.design.widget.TextInputEditText
+                                            android:id="@+id/houseno_textInput"
+                                            style="@style/TextAppearance.AppCompat.Medium"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:ellipsize="end"
+                                            android:hint="@string/building_flat_no"
+                                            android:inputType="text"
+                                            android:maxLines="1"
+                                            android:maxLength="5"
+                                            android:textColor="@android:color/black" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layout_margin"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5">
+
+                                        <Spinner
+                                            style="@style/Widget.AppCompat.Spinner.Underlined"
+                                            android:padding="@dimen/layout_margin"
+                                            android:layout_margin="5dp"
+                                            android:id="@+id/spinner_item"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+
+                                    <android.support.design.widget.TextInputLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5">
+
+                                        <android.support.design.widget.TextInputEditText
+                                            android:id="@+id/date_textInput"
+                                            style="@style/TextAppearance.AppCompat.Medium"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:ellipsize="end"
+                                            android:focusable="false"
+                                            android:hint="@string/scheduled_date"
+                                            android:inputType="text"
+                                            android:maxLines="1"
+                                            android:textColor="@android:color/black" />
+
+                                    </android.support.design.widget.TextInputLayout>
+
+                                </LinearLayout>
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layout_margin">
+
+                                    <android.support.design.widget.TextInputEditText
+                                        android:id="@+id/note_textInput"
+                                        style="@style/TextAppearance.AppCompat.Medium"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:ellipsize="end"
+                                        android:hint="@string/note"
+                                        android:inputType="text"
+                                        android:maxLines="1"
+                                        android:textColor="@android:color/black" />
+
+                                </android.support.design.widget.TextInputLayout>
+
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/layout_margin">
+
+                                    <android.support.design.widget.TextInputEditText
+                                        android:id="@+id/phone_textInput"
+                                        style="@style/TextAppearance.AppCompat.Medium"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:ellipsize="end"
+                                        android:hint="@string/phone_number"
+                                        android:inputType="number"
+                                        android:maxLines="1"
+                                        android:maxLength="10"
+                                        android:textColor="@android:color/black" />
+
+                                </android.support.design.widget.TextInputLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/mainColor"
+                                    style="@style/TextAppearance.AppCompat.Medium"
+                                    android:layout_margin="@dimen/layout_margin"
+                                    android:text="@string/choose_delivery_time"/>
+                                <!--<LinearLayout-->
+                                    <!--android:id="@+id/mainlayout"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:orientation="vertical"-->
+                                    <!--android:layout_marginBottom="50dp"/>-->
+
+                                <RadioGroup
+                                    android:id="@+id/radio_grp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="@dimen/layout_margin"/>
+
+                                    <!--<RadioButton-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:text="@string/yaaymina_morning_9_am_1_pm" />-->
+
+                                    <!--<RadioButton-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:text="@string/yaay_mina_afternoon_2_pm_5_pm" />-->
+
+                                    <!--<RadioButton-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:text="@string/yaay_mina_evening_6_pm_10_pm" />-->
+
+                                <!--</RadioGroup>-->
+
+                            </LinearLayout>
+
+                        </android.support.v4.widget.NestedScrollView>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true">
+
+                            <Button
+                                android:id="@+id/continue_payment"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/mainColor"
+                                android:text="@string/cotinue_to_checkout"
+                                android:textColor="@android:color/white" />
+
+                        </FrameLayout>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:visibility="visible"
+                        android:id="@+id/tab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            xmlns:tools="http://schemas.android.com/tools"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/white">
+
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                xmlns:tools="http://schemas.android.com/tools"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/white"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.35"
+                                    android:background="@color/product_list_color"
+                                    android:orientation="vertical"
+                                    android:weightSum="1"
+                                    tools:ignore="Suspicious0dp">
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.05" />
+
+                                    <TextView
+                                        style="@style/TextAppearance.AppCompat.Medium"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_marginLeft="@dimen/left_horizontal_margin"
+                                        android:layout_marginRight="@dimen/right_horizontal_margin"
+                                        android:layout_weight="0.2"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/coupon_code" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.1" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.25"
+                                        android:orientation="horizontal"
+                                        android:weightSum="1">
+
+                                        <View
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.05" />
+
+                                        <EditText
+                                            android:maxLines="1"
+                                            android:singleLine="true"
+                                            android:id="@+id/couponcode_editText"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.65"
+                                            android:background="@drawable/editext_box"
+                                            android:hint="@string/a6343"
+                                            android:padding="5dp" />
+
+                                        <Button
+                                            android:id="@+id/apply_coupon_button"
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.25"
+                                            android:background="@color/mainColor"
+                                            android:text="@string/apply"
+                                            android:textColor="@android:color/white" />
+
+                                        <View
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0.05" />
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.1" />
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="@dimen/left_horizontal_margin"
+                                        android:layout_marginRight="@dimen/right_horizontal_margin"
+                                        android:layout_weight="0.2"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            style="@style/TextAppearance.AppCompat.Medium"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:gravity="start"
+                                            android:text="@string/total_amount" />
+
+                                        <TextView
+                                            android:id="@+id/totalAmount_textView"
+                                            style="@style/TextAppearance.AppCompat.Medium"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="end"
+                                            android:text="@string/total_amount"
+                                            android:textColor="@color/remove_color" />
+
+
+                                    </LinearLayout>
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.1" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.65"
+                                    android:orientation="vertical"
+                                    android:weightSum="1">
+
+                                    <!--<android.support.design.widget.TabLayout-->
+                                    <!--android:id="@+id/tabLayout"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--app:tabTextColor="@android:color/black"-->
+                                    <!--android:minHeight="?attr/actionBarSize"-->
+                                    <!--app:tabSelectedTextColor="@color/colorPrimaryDark"-->
+                                    <!--app:tabIndicatorColor="@color/mainColor"-->
+                                    <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>-->
+
+
+                                    <!--<android.support.v4.view.ViewPager-->
+                                    <!--android:id="@+id/pager"-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:background="@android:color/white"/>-->
+
+                                    <TabHost
+                                        android:id="@+id/tabHost_"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_alignParentTop="true"
+                                        android:layout_centerHorizontal="true">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <TabWidget
+                                                android:id="@android:id/tabs"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content" />
+
+                                            <FrameLayout
+                                                android:id="@android:id/tabcontent"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent">
+
+                                                <RelativeLayout
+                                                    android:id="@+id/childtab1"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:background="@android:color/white"
+                                                    android:orientation="vertical">
+
+                                                    <FrameLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent">
+
+                                                        <TextView
+                                                            android:visibility="gone"
+                                                            android:id="@+id/text_noCards"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_gravity="center"
+                                                            android:gravity="center"
+                                                            android:text="@string/no_saved_cards"/>
+
+                                                    </FrameLayout>
+
+                                                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_margin="@dimen/left_horizontal_margin"
+                                                        android:orientation="vertical"
+                                                        android:weightSum="1"
+                                                        android:visibility="visible">
+
+                                                        <TextView
+                                                            android:id="@+id/text_savedDetails"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="0dp"
+                                                            android:layout_margin="@dimen/layout_margin"
+                                                            android:layout_weight="0.15"
+                                                            android:text="@string/saved_details"
+                                                            android:textColor="@android:color/black" />
+
+                                                        <LinearLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="0dp"
+                                                            android:layout_weight="0.15"
+                                                            android:orientation="horizontal">
+
+                                                            <RadioGroup
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:id="@+id/saved_card_group">
+
+                                                                <RadioButton
+                                                                    android:id="@+id/card_number_radio"
+                                                                    style="@style/TextAppearance.AppCompat.Medium"
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="match_parent"
+                                                                    android:text=""
+                                                                    android:textColor="@color/mainColor" />
+
+                                                            </RadioGroup>
+
+                                                            <ImageView
+                                                                android:id="@+id/image_card"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="match_parent"
+                                                                android:layout_gravity="top"
+                                                                android:src="@drawable/ic_card_defult" />
+
+                                                        </LinearLayout>
+
+                                                        <View
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="0dp"
+                                                            android:layout_weight="0.05" />
+
+                                                        <LinearLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="0dp"
+                                                            android:layout_margin="5dp"
+                                                            android:layout_weight="0.2"
+                                                            android:orientation="horizontal"
+                                                            android:weightSum="1">
+
+                                                            <EditText
+                                                                android:id="@+id/edt_cvv_card"
+                                                                style="@style/TextAppearance.AppCompat.Medium"
+                                                                android:layout_width="0dp"
+                                                                android:layout_height="match_parent"
+                                                                android:layout_weight="0.25"
+                                                                android:background="@drawable/editext_box"
+                                                                android:hint="@string/cvv"
+                                                                android:maxLines="1"
+                                                                android:inputType="number"
+                                                                android:maxLength="3"
+                                                                android:textColor="@android:color/black" />
+
+                                                            <View
+                                                                android:layout_width="0dp"
+                                                                android:layout_height="match_parent"
+                                                                android:layout_weight="0.05" />
+
+
+                                                            <ImageView
+                                                                android:id="@+id/image_cvv"
+                                                                android:layout_width="0dp"
+                                                                android:layout_height="match_parent"
+                                                                android:layout_gravity="top"
+                                                                android:layout_weight="0.2"
+                                                                android:src="@drawable/ic_cvv_code" />
+
+                                                            <View
+                                                                android:layout_width="0dp"
+                                                                android:layout_height="match_parent"
+                                                                android:layout_weight="0.5" />
+
+
+                                                        </LinearLayout>
+
+                                                        <View
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="0dp"
+                                                            android:layout_weight="0.45" />
+
+                                                    </LinearLayout>
+
+                                                    <FrameLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_alignParentBottom="true">
+
+                                                        <Button
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+                                                            android:id="@+id/continue_checkout_1"
+                                                            android:background="@color/mainColor"
+                                                            android:textColor="@android:color/white"
+                                                            android:text="@string/continue_to_confirmation"
+                                                            />
+
+                                                    </FrameLayout>
+
+
+                                                </RelativeLayout>
+
+                                                <RelativeLayout
+                                                    android:id="@+id/childtab2"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:background="@android:color/white"
+                                                    android:orientation="vertical">
+
+                                                    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:layout_marginBottom="50dp">
+
+                                                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+                                                            android:background="@android:color/white"
+                                                            android:orientation="vertical">
+
+                                                            <View
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="0.005dp"
+                                                                android:background="@android:color/darker_gray" />
+
+                                                            <LinearLayout
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="60dp"
+                                                                android:layout_margin="@dimen/left_horizontal_margin"
+                                                                android:orientation="vertical"
+                                                                android:weightSum="1">
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="0dp"
+                                                                    android:layout_weight="0.4"
+                                                                    android:text="@string/card_holder_name"
+                                                                    android:textColor="@android:color/black" />
+
+                                                                <LinearLayout
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="0dp"
+                                                                    android:layout_weight="0.6"
+                                                                    android:background="@drawable/card_bg">
+
+                                                                    <EditText
+                                                                        android:background="@android:color/transparent"
+                                                                        android:id="@+id/card_holder_name_et"
+                                                                        android:layout_width="wrap_content"
+                                                                        android:layout_height="match_parent"
+                                                                        android:hint="@string/john_smith"
+                                                                        android:inputType="text"
+                                                                        android:padding="5dp" />
+
+
+                                                                </LinearLayout>
+
+                                                            </LinearLayout>
+
+                                                            <LinearLayout
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="60dp"
+                                                                android:layout_margin="@dimen/left_horizontal_margin"
+                                                                android:orientation="vertical"
+                                                                android:weightSum="1">
+
+                                                                <TextView
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="0dp"
+                                                                    android:layout_weight="0.4"
+                                                                    android:text="@string/card_number"
+                                                                    android:textColor="@android:color/black" />
+
+                                                                <LinearLayout
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="0dp"
+                                                                    android:layout_weight="0.6"
+                                                                    android:orientation="horizontal"
+                                                                    android:weightSum="1">
+
+                                                                    <morxander.editcard.EditCard
+                                                                        android:id="@+id/card_number_et"
+                                                                        android:layout_width="wrap_content"
+                                                                        android:layout_height="wrap_content"
+                                                                        android:layout_weight="1"
+                                                                        android:background="@drawable/card_bg"
+                                                                        android:hint="@string/xxxx_o123_o123_xxxx"
+                                                                        android:inputType="phone"
+                                                                        android:padding="5dp"/>
+
+                                                                    <!--<EditText-->
+                                                                        <!--android:id="@+id/card_number_et"-->
+                                                                        <!--android:layout_width="0dp"-->
+                                                                        <!--android:layout_height="match_parent"-->
+                                                                        <!--android:layout_weight="0.85"-->
+                                                                        <!--android:background="@drawable/card_bg"-->
+                                                                        <!--android:hint="@string/xxxx_o123_o123_xxxx"-->
+                                                                        <!--android:inputType="phone"-->
+                                                                        <!--android:padding="5dp" />-->
+
+
+                                                                    <ImageView
+                                                                        android:visibility="gone"
+                                                                        android:id="@+id/cardImage_iv"
+                                                                        android:layout_width="0dp"
+                                                                        android:layout_height="match_parent"
+                                                                        android:layout_weight="0.1"
+                                                                        android:src="@drawable/ic_card_defult" />
+                                                                </LinearLayout>
+
+                                                            </LinearLayout>
+
+                                                            <LinearLayout
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="60dp"
+                                                                android:layout_margin="@dimen/left_horizontal_margin"
+                                                                android:orientation="horizontal"
+                                                                android:weightSum="1">
+
+                                                                <LinearLayout
+                                                                    android:layout_width="0dp"
+                                                                    android:layout_height="match_parent"
+                                                                    android:layout_weight="0.3"
+                                                                    android:orientation="vertical">
+
+                                                                    <TextView
+                                                                        android:layout_width="wrap_content"
+                                                                        android:layout_height="0dp"
+                                                                        android:layout_weight="0.4"
+                                                                        android:text="@string/month_hint"
+                                                                        android:textColor="@android:color/black" />
+
+                                                                    <EditText
+                                                                        android:id="@+id/month_et"
+                                                                        android:layout_width="match_parent"
+                                                                        android:layout_height="0dp"
+                                                                        android:layout_weight="0.6"
+                                                                        android:background="@drawable/card_bg"
+                                                                        android:hint="@string/month"
+                                                                        android:inputType="number"
+                                                                        android:maxLines="1"
+                                                                        android:maxLength="2"
+                                                                        android:padding="5dp"
+
+                                                                        />
+
+                                                                </LinearLayout>
+
+                                                                <View
+                                                                    android:layout_width="0dp"
+                                                                    android:layout_height="match_parent"
+                                                                    android:layout_weight="0.05" />
+
+
+                                                                <LinearLayout
+                                                                    android:layout_width="0dp"
+                                                                    android:layout_height="match_parent"
+                                                                    android:layout_weight="0.3"
+                                                                    android:orientation="vertical">
+
+                                                                    <TextView
+                                                                        android:layout_width="wrap_content"
+                                                                        android:layout_height="0dp"
+                                                                        android:layout_weight="0.4"
+                                                                        android:text="@string/year_hint"
+                                                                        android:textColor="@android:color/black" />
+
+                                                                    <EditText
+                                                                        android:id="@+id/year_et"
+                                                                        android:layout_width="match_parent"
+                                                                        android:layout_height="0dp"
+                                                                        android:layout_weight="0.6"
+                                                                        android:background="@drawable/card_bg"
+                                                                        android:hint="@string/_2017"
+                                                                        android:inputType="number"
+                                                                        android:maxLength="2"
+                                                                        android:padding="5dp" />
+
+                                                                </LinearLayout>
+
+                                                                <View
+                                                                    android:layout_width="0dp"
+                                                                    android:layout_height="match_parent"
+                                                                    android:layout_weight="0.05" />
+
+
+                                                                <LinearLayout
+                                                                    android:layout_width="0dp"
+                                                                    android:layout_height="match_parent"
+                                                                    android:layout_weight="0.3"
+                                                                    android:orientation="vertical">
+
+                                                                    <TextView
+                                                                        android:layout_width="match_parent"
+                                                                        android:layout_height="0dp"
+                                                                        android:layout_weight="0.4"
+                                                                        android:text="@string/cvv"
+                                                                        android:textColor="@android:color/black" />
+
+                                                                    <EditText
+                                                                        android:id="@+id/cvv_et"
+                                                                        android:layout_width="match_parent"
+                                                                        android:layout_height="0dp"
+                                                                        android:layout_weight="0.6"
+                                                                        android:background="@drawable/card_bg"
+                                                                        android:hint="@string/_123"
+                                                                        android:maxLength="3"
+                                                                        android:inputType="number"
+                                                                        android:padding="5dp" />
+
+                                                                </LinearLayout>
+
+
+                                                            </LinearLayout>
+
+
+                                                        </LinearLayout>
+
+                                                    </android.support.v4.widget.NestedScrollView>
+
+
+                                                    <FrameLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_alignParentBottom="true">
+
+                                                        <Button
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+                                                            android:id="@+id/continue_checkout_2"
+                                                            android:background="@color/mainColor"
+                                                            android:textColor="@android:color/white"
+                                                            android:text="@string/continue_to_confirmation"
+                                                            />
+
+                                                    </FrameLayout>
+
+                                                </RelativeLayout>
+
+                                                <RelativeLayout
+                                                    android:id="@+id/childtab3"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:background="@android:color/white"
+                                                    android:orientation="vertical">
+
+                                                    <RadioGroup
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:id="@+id/radio_group_cod">
+
+                                                        <RadioButton
+                                                            android:id="@+id/radio_cod"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_margin="40dp"
+                                                            style="@style/TextAppearance.AppCompat.Medium"
+                                                            android:text="@string/cash_on_delivery"
+                                                            android:textColor="@color/mainColor" />
+
+
+                                                    </RadioGroup>
+
+                                                    <FrameLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_alignParentBottom="true">
+
+                                                        <Button
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+                                                            android:id="@+id/continue_checkout_3"
+                                                            android:background="@color/mainColor"
+                                                            android:textColor="@android:color/white"
+                                                            android:text="@string/continue_to_confirmation"
+                                                            />
+
+                                                    </FrameLayout>
+
+                                                </RelativeLayout>
+
+                                                <RelativeLayout
+                                                    android:id="@+id/childtab4"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:background="@android:color/white"
+                                                    android:orientation="vertical">
+
+                                                    <RadioGroup
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:id="@+id/radio_group_telr">
+
+                                                        <RadioButton
+                                                            android:id="@+id/radio_telr"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginLeft="40dp"
+                                                            android:layout_marginRight="40dp"
+                                                            android:layout_marginTop="40dp"
+                                                            android:text="@string/telR_payment"
+                                                            style="@style/TextAppearance.AppCompat.Medium"
+                                                            android:textColor="@color/mainColor" />
+
+                                                    </RadioGroup>
+
+                                                    <RadioGroup
+                                                        android:layout_below="@+id/radio_group_telr"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:id="@+id/radio_group_saved_card_telr">
+
+                                                        <RadioButton
+                                                            android:id="@+id/radio_saved_card_telr"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginLeft="40dp"
+                                                            android:layout_marginRight="40dp"
+                                                            style="@style/TextAppearance.AppCompat.Medium"
+                                                            android:text="@string/saved_cards"
+                                                            android:textColor="@color/mainColor" />
+
+                                                    </RadioGroup>
+
+                                                    <LinearLayout
+                                                        android:layout_below="@+id/radio_group_saved_card_telr"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="20dp"
+                                                        android:layout_marginTop="10dp"
+                                                        android:layout_marginLeft="55dp"
+                                                        android:orientation="horizontal">
+
+                                                        <TextView
+                                                            android:id="@+id/telRcardnum"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            style="@style/TextAppearance.AppCompat.Medium"
+                                                            android:textColor="@android:color/black"/>
+
+                                                        <ImageView
+                                                            android:id="@+id/telRcardimg"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content" />
+
+                                                    </LinearLayout>
+
+
+                                                    <FrameLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_alignParentBottom="true">
+
+                                                        <Button
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="match_parent"
+                                                            android:id="@+id/continue_checkout_4"
+                                                            android:background="@color/mainColor"
+                                                            android:textColor="@android:color/white"
+                                                            android:text="@string/continue_to_confirmation"
+                                                            />
+
+                                                    </FrameLayout>
+
+                                                </RelativeLayout>
+
+
+                                            </FrameLayout>
+
+                                        </LinearLayout>
+
+                                    </TabHost>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <!--<FrameLayout-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_alignParentBottom="true">-->
+
+                                <!--<Button-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="match_parent"-->
+                                    <!--android:id="@+id/continue_checkout"-->
+                                    <!--android:background="@color/mainColor"-->
+                                    <!--android:textColor="@android:color/white"-->
+                                    <!--android:text="@string/continue_to_confirmation"-->
+                                    <!--/>-->
+
+                            <!--</FrameLayout>-->
+
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/tab3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white"
+                        android:orientation="vertical">
+
+                        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/white">
+
+                            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.248"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="@dimen/layout_margin"
+                                        android:layout_marginRight="@dimen/layout_margin"                                        android:layout_weight="0.5"
+                                        android:orientation="vertical"
+                                        android:weightSum="1">
+
+                                        <TextView
+                                            style="@style/TextAppearance.AppCompat.Small"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="0.25"
+                                            android:text="@string/shipping_to"
+                                            android:textColor="@android:color/black" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="0.05" />
+
+                                        <TextView
+                                            android:id="@+id/address_textview"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="0.7"
+                                            android:ellipsize="end"
+                                            android:maxLines="3"
+                                            android:text="hello" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="@dimen/layout_margin"
+                                        android:layout_marginRight="@dimen/layout_margin"                                        android:layout_weight="0.5"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            style="@style/TextAppearance.AppCompat.Small"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="0.25"
+                                            android:text="@string/note"
+                                            android:textColor="@android:color/black" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="0.05" />
+
+                                        <TextView
+                                            android:id="@+id/textview_note"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="0.7"
+                                            android:text="@string/call_prior_to_delivery" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.002"
+                                    android:background="@android:color/darker_gray" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_margin="@dimen/layout_margin"
+                                    android:layout_weight="0.349"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        style="@style/TextAppearance.AppCompat.Medium"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/items"
+                                        android:textColor="@android:color/black" />
+
+                                    <android.support.v7.widget.RecyclerView
+                                        android:id="@+id/recycler_cart"
+                                        android:overScrollMode="never"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.002"
+                                    android:background="@android:color/darker_gray" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_margin="@dimen/layout_margin"
+                                    android:layout_weight="0.199"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.6"
+                                        android:orientation="vertical"
+                                        android:weightSum="1">
+
+                                        <TextView
+                                            style="@style/TextAppearance.AppCompat.Medium"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="0.4"
+                                            android:text="@string/payment_summary"
+                                            android:textColor="@android:color/black" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="0.3"
+                                            android:gravity="bottom"
+                                            android:text="@string/order_total" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="0.3"
+                                            android:gravity="bottom"
+                                            android:text="@string/discount" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.4"
+                                        android:weightSum="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/order_total_textview"
+                                            style="@style/TextAppearance.AppCompat.Small"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_marginRight="@dimen/layout_margin"
+                                            android:layout_weight="0.7"
+                                            android:gravity="bottom|end"
+                                            android:text="price" />
+
+                                        <TextView
+                                            android:id="@+id/order_discount_textview"
+                                            style="@style/TextAppearance.AppCompat.Small"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="0.3"
+                                            android:layout_marginRight="10dp"
+                                            android:gravity="bottom|end"
+                                            android:text="price" />
+
+
+
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.002"
+                                    android:background="@android:color/darker_gray" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_margin="@dimen/layout_margin"
+                                    android:layout_weight="0.099"
+                                    android:orientation="horizontal">
+
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.6">
+
+                                        <TextView
+                                            style="@style/TextAppearance.AppCompat.Medium"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:text="@string/total_amount" />
+
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/total_textview"
+                                        style="@style/TextAppearance.AppCompat.Medium"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.4"
+                                        android:gravity="end"
+                                        android:text="aed"
+                                        android:textColor="@color/remove_color" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.1" />
+
+                            </LinearLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true">
+
+                                <Button
+                                    android:id="@+id/continue_order"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/mainColor"
+                                    android:text="@string/order_now"
+                                    android:textColor="@android:color/white" />
+
+                            </FrameLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </TabHost>
+
+
+        <!-- View pager to swipe views -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frame_card"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_trans">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_card"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:overScrollMode="never"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_telr_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:overScrollMode="never"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
+

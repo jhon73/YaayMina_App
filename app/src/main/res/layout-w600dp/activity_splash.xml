@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/ic_splashscreen"
+    tools:context="app.yaaymina.com.yaaymina.Activity.SplashScreen">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:src="@drawable/ic_splashlogo"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"/>
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="@dimen/left_horizontal_margin"
+        android:layout_marginRight="@dimen/right_horizontal_margin"
+        android:layout_marginBottom="@dimen/left_horizontal_margin"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                />
+
+            <LinearLayout
+                android:id="@+id/chooseLanguagell"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.8"
+                android:weightSum="0.6"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/layout_margin"
+                android:background="@drawable/language_selection_bg"
+                android:layout_marginTop="@dimen/left_horizontal_margin">
+
+
+                <ImageView
+                    android:id="@+id/logo_imgVw"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_english_logo"
+                    android:layout_weight="0.07"
+                    android:layout_marginLeft="@dimen/left_horizontal_margin"/>
+
+                <TextView
+                    android:id="@+id/lang_textview"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.93"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/left_horizontal_margin"
+                    android:text="@string/chooose_a_language"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/mainColor">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

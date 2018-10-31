@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/layout_mainlayer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@drawable/ic_toolbar_logo_bg">
+
+            <TextView
+                android:id="@+id/textToolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <FrameLayout
+            android:background="@android:color/white"
+            android:id="@+id/fragment_frame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.81"
+            android:clickable="true"/>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            app:itemBackground="@drawable/bottom_nav_bg"
+            app:itemTextColor="@android:color/white"
+            app:itemIconTint="@android:color/white"
+            app:menu="@menu/navigation"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/laayout_secondary_layer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_native"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="@color/mainColor">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@android:color/white"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:gravity="center"/>
+        </android.support.v7.widget.Toolbar>
+
+        <!--<include layout="@layout/content_main" />-->
+
+        <FrameLayout
+            android:background="@android:color/white"
+            android:id="@+id/fragment_frame_native"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.81"
+            android:clickable="true"/>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation_native"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            app:itemBackground="@drawable/bottom_nav_bg"
+            app:itemTextColor="@android:color/white"
+            app:itemIconTint="@android:color/white"
+            app:menu="@menu/navigation"/>
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:backgroundTintMode="add"
+        android:background="@color/mainColor"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/menu_navigationdrawer"
+        app:itemIconTint="@android:color/white"
+        android:theme="@style/AppTheme.Toolbar.NavigationView" />
+
+</android.support.v4.widget.DrawerLayout>

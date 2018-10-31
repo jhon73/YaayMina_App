@@ -1,0 +1,342 @@
+<resources>
+    <string name="app_name">Yaaymina</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_in">Sign in</string>
+    <string name="accept_t_n_c">Accept T &amp; C *</string>
+    <string name="forogt_password">Forogt Password?</string>
+    <string name="login">Login</string>
+    <string name="sign_up_tip">New User? Sign up here</string>
+    <string name="guest_user">Guest User</string>
+    <string name="password">Password</string>
+    <string name="signup">Register</string>
+    <string name="sign_up">Sign up</string>
+    <string name="phone_number">Mobile number</string>
+    <string name="email">Email</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="title_home">Home</string>
+    <string name="title_cart">My Cart</string>
+    <string name="title_search">Search</string>
+    <string name="title_account">My Account</string>
+    <string name="title_contact">Contact Us</string>
+    <string name="title_signout">Sign out</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="profile">Profile</string>
+    <string name="save_address">Save Address</string>
+    <string name="message">Message</string>
+    <string name="price">price</string>
+    <string name="description">Description</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="buy_now">buy now</string>
+    <string name="update">Update</string>
+    <string name="add_new_address">Add new address</string>
+    <string name="change">Change</string>
+    <string name="delete">Delete</string>
+    <string name="add_new_shipping_address">Add New Shipping Address</string>
+    <string name="last_name">Last name</string>
+    <string name="first_name">First name</string>
+    <string name="address_line_1">Address Line 1</string>
+    <string name="address_line_2">Address Line 2</string>
+    <string name="community">City</string>
+    <string name="building_flat_no">Building/Flat No.</string>
+    <string name="city">Community/Area</string>
+    <string name="save">save</string>
+    <string name="user_name">User name</string>
+    <string name="call_prior_to_delivery">Call Prior to Delivery</string>
+    <string name="place_your_order">PLACE YOUR ORDER</string>
+    <string name="product">Product</string>
+    <string name="weight">Weight</string>
+    <string name="remove">Remove</string>
+    <string name="_1">1</string>
+    <string name="saved_address"> \u0020 Saved Address \u0020</string>
+    <string name="new_address">\u0020 New Address \u0020</string>
+    <string name="cotinue_to_checkout">Cotinue to payment</string>
+    <string name="scheduled_date">Scheduled Date</string>
+    <string name="yaaymina_morning_9_am_1_pm">YAAY MINA MORNING (9 am - 1 pm)</string>
+    <string name="yaay_mina_afternoon_2_pm_5_pm">YAAY MINA AFTERNOON (2 pm - 5 pm)</string>
+    <string name="yaay_mina_evening_6_pm_10_pm">YAAY MINA EVENING (6 pm - 10 pm)</string>
+    <string name="title">title</string>
+    <string name="phone">phone</string>
+    <string name="chooose_a_language">Chooose a Language</string>
+    <!--<string name="aerabic">Arabic</string>-->
+    <!--<string name="english">English</string>-->
+    <string name="select_address">Select Address</string>
+    <string name="coupon_code">Coupon Code</string>
+    <string name="sort_by">Sort By</string>
+    <string name="we_recommended">We Recommended</string>
+    <string name="new_arrivals">Newest Arrivals</string>
+    <string name="price_low_to_high">Price : Low to High</string>
+    <string name="price_high_to_low">Price : High to Low</string>
+    <string name="name_a_to_z">Name : A to Z</string>
+    <string name="name_z_to_a">Name : Z to A</string>
+    <string name="my_profile">My Profile</string>
+    <string name="address_book">Address Book</string>
+    <string name="search">Search</string>
+    <string name="saved_cards">Saved Cards</string>
+    <string name="add_new">Add New</string>
+    <string name="add_new_card">Add New Card</string>
+    <string name="card_holder_name">Card Holder Name</string>
+    <string name="john_smith">John Smith</string>
+    <string name="card_number">Card Number</string>
+    <string name="xxxx_o123_o123_xxxx">XXXX 0123 0123 XXXX</string>
+    <string name="month">12</string>
+    <string name="month_hint">Month</string>
+    <string name="year_hint">Year</string>
+    <string name="_2017">18</string>
+    <string name="_123">123</string>
+    <string name="update_shipping_address">Update Shipping Address</string>
+    <string name="my_orders">My Orders</string>
+    <string name="cash_on_delivery">Cash On Delivery</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="apply">APPLY</string>
+    <string name="a6343">#A6343</string>
+    <string name="my_cart">My Cart</string>
+    <string name="continue_to_confirmation">CONTINUE TO CONFIRMATION</string>
+    <string name="saved_details">Saved Details</string>
+    <string name="cvv">CVV</string>
+    <string name="shop_now">Shop Now</string>
+    <string name="your_cart_is_empty">Your Cart is Empty!</string>
+    <string name="view_cart">View Cart</string>
+    <string name="shopping_bags">Shopping Bags</string>
+    <string name="order_now">Order Now</string>
+    <string name="shipping_to">Shipping To</string>
+    <string name="note">Note</string>
+    <string name="payment_summary">Payment Summary</string>
+    <string name="order_total">Order Total</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="items">Items</string>
+    <string name="payment_option">Payment Option</string>
+    <string name="city_prompt">Select City</string>
+    <string name="change_password">Change Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="already_have_an_account_please_login_here">Already have an account? Please login here</string>
+    <string name="dispatched">Dispatched</string>
+    <string name="onway">Onway</string>
+    <string name="pending">Pending</string>
+    <string name="delivered">Delivered</string>
+    <string name="want_to_del">Are you Sure you want to Delete ?</string>
+    <string name="cancrl_">Cancel</string>
+    <string name="del">Delete</string>
+    <string name="how_we_can_help_you">How We Can Help You</string>
+    <string name="send">send</string>
+    <string name="Shipping">Shipping</string>
+    <string name="Payment">Payment</string>
+    <string name="Confirmation">Confirmation</string>
+    <string name="SAVED_CARD">SAVED CARD</string>
+    <string name="credit_debit">CREDIT / DEBIT</string>
+    <string name="cod">COD</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="my_reorder">My Reorder</string>
+    <string name="order_details">Order Details</string>
+    <string name="order_id">Order id</string>
+    <string name="order_status">Order Status</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="order_information">Order Information</string>
+    <string name="calendar_delivary">Calendar Delivery</string>
+    <string name="time_delivery">Time Delivery</string>
+    <string name="repeat_automatically_every">Repeat Automatically every</string>
+    <string name="weekly">Weekly</string>
+    <string name="_2_weekly">2 weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="custom_days">Custom Days</string>
+    <string name="manage_schedule">Manage Schedule</string>
+    <string name="re_order">Re-Order</string>
+    <string name="repeatautomaticallyevery">Repeat Automatically every</string>
+    <string name="select_repeat_schedule">Select Repeat Schedule</string>
+    <string name="continue_">Continue</string>
+    <string name="date_selection">Select Date</string>
+    <string name="time_selection">Select Time</string>
+    <string name="days">Days</string>
+    <string name="recommended_products">Recommended Products</string>
+    <string name="re_orders_list">Re-Orders List</string>
+    <string name="no_Intenrnet">Check your newtwork connection</string>
+    <string name="try_again">Try again !</string>
+    <string name="enter_email">Enter email</string>
+    <string name="invalid_email">Invalid email address</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="password_length">Passowrd length must be between 6 - 10 characters</string>
+    <string name="please_wait">Please wait</string>
+    <string name="enter_user_name">Enter user name</string>
+    <string name="enter_phone_num">Enter phone number</string>
+    <string name="invalid_phn_num">Invalid phone number</string>
+    <string name="no_orders_found">No Orders Found</string>
+    <string name="your_re_order_cart_is_empty">Your Re-Order Cart is Empty</string>
+    <string name="noAdreess">No Address Found !</string>
+    <string name="thank_you">THANK YOU</string>
+    <string name="for_your_order">FOR YOUR ORDER</string>
+    <string name="com_stripe_publishable_key">pk_test_MnYdjiV4RxJ7xp3fdm51QVDH</string>
+    <string name="empty_coupon">Coupon Code value is empty</string>
+    <string name="empty_first_name">Enter First Name</string>
+    <string name="empty_last_name">Enter Last Name</string>
+    <string name="empty_address_line1">Enter Address Line 1</string>
+    <string name="empty_address_line2">Enter Address Line 2</string>
+    <string name="select_city">Select City</string>
+    <string name="empty_flat_no">Enter Building/Flat No</string>
+    <string name="empty_community">Select Community / Area</string>
+    <string name="empty_date">Enter Date</string>
+    <string name="empty_note">Enter note</string>
+    <string name="empty_delivery_time">Select Delivery Time</string>
+    <string name="select_saved_card">Select Saved Card</string>
+    <string name="empty_cvv">Enter CVV number</string>
+    <string name="empty_card_holder">Enter card holder name</string>
+    <string name="empty_card_num">Enter card number</string>
+    <string name="invalide_card_num">Enter valid card number</string>
+    <string name="empty_expirt_dt">Enter expiry month</string>
+    <string name="empty_expiry_yeaer">Enter expiry year</string>
+    <string name="select_cod_method">Select COD method</string>
+    <string name="select_telr_method">Select Telr payment method</string>
+    <string name="something_went_wrong">Something went wrong.Please try again later</string>
+    <string name="select_schedule_type">Select Schedule Type</string>
+    <string name="select_interval_days">Select interval days</string>
+    <string name="enter_old_pwd">Enter old password</string>
+    <string name="enter_new_pwd">Enter new password</string>
+    <string name="err_updating_cart">Error while updating cart</string>
+    <string name="card_validation">Only VISA, Master Card and American Express cards are supported</string>
+    <string name="discount">Discount</string>
+    <string name="ok">OK</string>
+    <string name="please_select_time_after_30_minutes">*Please select time after 30 minutes</string>
+    <string name="choose_delivery_time">Choose Delivery Time</string>
+    <string name="no_saved_cards">No Saved Cards</string>
+    <string name="select_time">Select Time</string>
+    <string name="payment_type">Select Payment Type</string>
+    <string name="no_re_orders_found">No Re Orders Found</string>
+    <string name="total_cost">Total Cost</string>
+    <string name="select_schedule">Select Schedule type</string>
+    <string name="cant_reorder">Can not place re-order</string>
+    <string name="select_btwn_9_to_9">Please select time between 9 AM to 9 PM</string>
+    <string name="telR">TelR</string>
+    <string name="telR_payment">TelR Direct payment</string>
+
+
+    <string-array name="community_area">
+        <item>Select Community / Area</item>
+        <item>Airport Road</item>
+        <item>Al Adla</item>
+        <item>Al Aman</item>
+        <item> Al Bahya </item>
+        <item> Al Bandar </item>
+        <item> Al Bateen </item>
+        <item> Al Dafrah </item>
+        <item> Al Etihad </item>
+        <item> Al Falah City </item>
+        <item> Al Hosn </item>
+        <item> Al Karamah </item>
+        <item> Al Khalidiyah </item>
+        <item> Al Khubeirah </item>
+        <item> Al Mafraq </item>
+        <item> Al Manhal </item>
+        <item> Al Maqta </item>
+        <item> Al Markaziyah West </item>
+        <item> Al Markaziyah </item>
+        <item> Al Maryah Island </item>
+        <item> Al Mina </item>
+        <item> Al Muneera </item>
+        <item> Al Muntazah </item>
+        <item> Al Musalla </item>
+        <item> Al Mushrif </item>
+        <item> Al Muzoon </item>
+        <item> Al Nahyan </item>
+        <item> Al Raha </item>
+        <item> Al Rahba </item>
+        <item> Al Ras Al Akhdar </item>
+        <item> Al Reef </item>
+        <item> Al Rowdah </item>
+        <item> Al Safarat </item>
+        <item> Al Samha </item>
+        <item> Al Seef </item>
+        <item> Al Shamkha </item>
+        <item> Al Shawamekh </item>
+        <item> Al Wahdah </item>
+        <item> Al Wathba </item>
+        <item> Al Zaab </item>
+        <item> Al Zafranah </item>
+        <item> Al Zahraa </item>
+        <item> Al Zeina </item>
+        <item> Bain Al Jesrain </item>
+        <item> Bani Yas </item>
+        <item> Belghailam </item>
+        <item> BreakWater </item>
+        <item> Capital Centre </item>
+        <item> Corniche </item>
+        <item> Dhow Harbour </item>
+        <item> Hydra City </item>
+        <item> Khor Al Maqtaa </item>
+        <item> Madinat Khalifa - A </item>
+        <item> Madinat Khalifa - B </item>
+        <item> Madinat Khalifa - C </item>
+        <item> Madinat Zayed </item>
+        <item> Mangroves </item>
+        <item> Masdar City </item>
+        <item> Mohammed Bin Zayed City </item>
+        <item> Mussafah Industrial community </item>
+        <item> New Shahama </item>
+        <item> Port Zayed </item>
+        <item> Qasr El Bahr </item>
+        <item> Qasr El Shantie </item>
+        <item> Reem Island </item>
+        <item> Saadiyat Island </item>
+        <item> Sas Al Nakhl Island </item>
+        <item> Shahama </item>
+        <item> Tourist Club Area </item>
+        <item> Yas Island </item>
+        <item> Zayed Sports City </item>
+    </string-array>
+
+    <string-array name="community">
+        <item>Abu Dhabi</item>
+        <item>Dubai (Coming Soon)</item>
+        <item>RAK (Coming Soon)</item>
+        <item>Al Ain (Coming Soon)</item>
+        <item>Sharjah (Coming Soon)</item>
+        <item>Fujairah(Coming Soon)</item>
+        <item>Umm al quwain (Coming Soon)</item>
+        <item>Ajman (Coming Soon)</item>
+    </string-array>
+
+    <string-array name="re_schedule">
+        <item>Weekly</item>
+        <item>2 weekly</item>
+        <item>Monthly</item>
+        <item>Custom Days</item>
+    </string-array>
+
+    <string-array name="re_schedule_days">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,250 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<resources>
+    <string name="app_name">Yaaymina</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="accept_t_n_c"> قبول T - أمب؛ C *</string>
+    <string name="forogt_password">نسيت كلمة المرور؟</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="sign_up_tip">مستخدم جديد؟ سجل هنا</string>
+    <string name="guest_user">حساب زائر</string>
+    <string name="password">كلمه السر</string>
+    <string name="signup">تسجيل</string>
+    <string name="sign_up">سجل</string>
+    <string name="phone_number">رقم الهاتف المحمول</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="title_activity_home_screen">الشاشة الرئيسية</string>
+    <string name="title_home">الصفحة الرئيسية</string>
+    <string name="title_cart">سلة التسوق</string>
+    <string name="title_search">بحث</string>
+    <string name="title_account">حسابي</string>
+    <string name="title_contact">اتصل بنا</string>
+    <string name="title_signout">خروج</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="my_orders">طلباتي</string>
+    <string name="save_address">حفظ العنوان</string>
+    <string name="message">رسالة</string>
+    <string name="price">السعر</string>
+    <string name="title">عنوان</string>
+    <string name="description">وصف</string>
+    <string name="add_to_cart">وصف</string>
+    <string name="buy_now">اشتري الآن</string>
+    <!--<string name="aerabic">Arabic</string>-->
+    <!--<string name="english">الإنجليزية</string>-->
+    <string name="update">تحديث</string>
+    <string name="add_new_address">إضافة عنوان جديد</string>
+    <string name="change">يتغيرون</string>
+    <string name="delete">حذف</string>
+    <string name="add_new_shipping_address">اضف عنوان شحن جديد</string>
+    <string name="last_name">الكنيةe</string>
+    <string name="first_name">الاسم الاول</string>
+    <string name="address_line_1">العنوان الأول</string>
+    <string name="address_line_2">سطر العنوان 2</string>
+    <string name="community">مدينة</string>
+    <string name="building_flat_no">مبنى / شقة رقم</string>
+    <string name="city">المجتمع / المنطقة</string>
+    <string name="save">save</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="call_prior_to_delivery">اتصل قبل التسليم</string>
+    <string name="place_your_order">ضع طلبك</string>
+    <string name="product">المنتج</string>
+    <string name="weight">وزن</string>
+    <string name="remove">إزالة</string>
+    <string name="_1">1</string>
+    <string name="saved_address"> \u0020 العنوان المحفوظ \u0020</string>
+    <string name="new_address">\u0020 عنوان جديد \u0020</string>
+    <string name="cotinue_to_checkout">كوتينو إلى الدفع</string>
+    <string name="scheduled_date">التاريخ المجدول</string>
+    <string name="yaaymina_morning_9_am_1_pm">يايا مينا مورنينغ (من 9 صباحا حتى 1 ظهرا)</string>
+    <string name="yaay_mina_afternoon_2_pm_5_pm">ياي مينا أفترنون (2 ظهرا - 5 مساء)</string>
+    <string name="yaay_mina_evening_6_pm_10_pm">يايا مينا إيفينينغ (6 مساء - 10 مساء)</string>
+    <string name="phone">هاتف</string>
+    <string name="chooose_a_language">تشوس a لانغواد</string>
+    <string name="select_address">حدد العنوان</string>
+    <string name="coupon_code">رمز القسيمة</string>
+    <string name="total_amount">المبلغ الإجمالي</string>
+    <string name="sort_by">ترتيب حسب</string>
+    <string name="we_recommended">نحن الموصى بها</string>
+    <string name="new_arrivals">أحدث الوافدين</string>
+    <string name="price_low_to_high">السعر من الارخص للاعلى</string>
+    <string name="price_high_to_low">السعر الاعلى الى الادنى</string>
+    <string name="name_a_to_z">الاسم: من الألف إلى الياء</string>
+    <string name="name_z_to_a">الاسم: Z إلى A</string>
+    <string name="my_profile">ملفي</string>
+    <string name="address_book">دليل العناوين</string>
+    <string name="search">بحث</string>
+    <string name="update_shipping_address">تحديث عنوان الشحن</string>
+    <string name="cash_on_delivery">الدفع عن الاستلام</string>
+    <string name="contact_us">اتصل بنا</string>
+    <string name="apply">تطبيق</string>
+    <string name="a6343">#A6343</string>
+    <string name="my_cart">سلة التسوق</string>
+    <string name="continue_to_confirmation">مواصلة التأكيد</string>
+    <string name="saved_details">تم حفظ التفاصيل</string>
+    <string name="cvv">CVV</string>
+    <string name="shop_now">تسوق الآن</string>
+    <string name="your_cart_is_empty">عربة التسوق فارغة!</string>
+    <string name="saved_cards">البطاقات المحفوظة</string>
+    <string name="add_new">اضف جديد</string>
+    <string name="add_new_card">إضافة بطاقة جديدة</string>
+    <string name="card_holder_name">إسم صاحب البطاقة</string>
+    <string name="john_smith">جون سميث</string>
+    <string name="card_number">رقم البطاقة</string>
+    <string name="xxxx_o123_o123_xxxx">XXXX 0123 0123 XXXX</string>
+    <string name="month">12</string>
+    <string name="month_hint">شهر</string>
+    <string name="year_hint">عام</string>
+    <string name="_2017">18</string>
+    <string name="_123">123</string>
+    <string name="view_cart">عرض السلة</string>
+    <string name="shopping_bags">أكياس التسوق</string>
+    <string name="order_now">اطلب الان</string>
+    <string name="shipping_to">يشحن إلى</string>
+    <string name="note">ملحوظة</string>
+    <string name="payment_summary">ملخص الدفع</string>
+    <string name="order_total">الطلب الكلي</string>
+    <string name="items">العناصر</string>
+    <string name="payment_option">خيار الدفع</string>
+    <string name="city_prompt">اختر مدينة</string>
+    <string name="change_password">تغيير كلمة السر</string>
+    <string name="current_password">كلمة السر الحالية</string>
+    <string name="new_password">كلمة السر الجديدة</string>
+    <string name="already_have_an_account_please_login_here"> هل لديك حساب؟ الرجاء تسجيل الدخول هنا</string>
+    <string name="dispatched">أرسل</string>
+    <string name="pending">قيد الانتظار</string>
+    <string name="onway">على الطريق</string>
+    <string name="delivered">تم التوصيل</string>
+    <string name="want_to_del">هل أنت متأكد أنك تريد حذف ؟</string>
+    <string name="cancrl_">إلغاء</string>
+    <string name="del">حذف</string>
+    <string name="how_we_can_help_you">كيف يمكننا مساعدتك</string>
+    <string name="send">إرسال</string>
+    <string name="Shipping">الشحن</string>
+    <string name="Payment">دفع</string>
+    <string name="Confirmation">التأكيد</string>
+    <string name="SAVED_CARD">تم حفظ البطاقة</string>
+    <string name="credit_debit">كريديت / ديبيت</string>
+    <string name="cod">سمك القد</string>
+    <string name="forgot_password">هل نسيت كلمة المرور</string>
+    <string name="my_reorder">بلدي إعادة ترتيب</string>
+    <string name="order_details">تفاصيل الطلب</string>
+    <string name="order_id">رقم التعريف الخاص بالطلب</string>
+    <string name="order_status">حالة الطلب</string>
+    <string name="grand_total">المبلغ الإجمالي</string>
+    <string name="payment_method">طريقة الدفع او السداد</string>
+    <string name="order_information">معلومات الطلب</string>
+    <string name="calendar_delivary">تسليم التقويم</string>
+    <string name="time_delivery">التسليم في الوقت المحدد</string>
+    <string name="repeat_automatically_every">كرر تلقائيا كل</string>
+    <string name="manage_schedule">إدارة الجدول الزمني</string>
+    <string name="re_order">إعادة ترتيب</string>
+    <string name="repeatautomaticallyevery">كرر تلقائيا كل</string>
+    <string name="select_repeat_schedule">حدد جدول التكرار</string>
+    <string name="continue_">استمر</string>
+    <string name="date_selection">حدد تاريخ</string>
+    <string name="time_selection">حدد الوقت</string>
+    <string name="days">أيام</string>
+    <string name="recommended_products">المنتجات الموصى بها</string>
+    <string name="re_orders_list">إعادة ترتيب قائمة</string>
+    <string name="no_Intenrnet">تحقق من اتصال العمل الجديد</string>
+    <string name="try_again">حاول ثانية !</string>
+    <string name="enter_email">أدخل البريد الإلكتروني</string>
+    <string name="invalid_email">عنوان البريد الإلكتروني غير صالح</string>
+    <string name="enter_password">أدخل كلمة المرور</string>
+    <string name="password_length">يجب أن يكون طول باسورد بين 6-10 أحرف</string>
+    <string name="please_wait">أرجو الإنتظار</string>
+    <string name="enter_user_name">ادخل اسم المستخدم</string>
+    <string name="enter_phone_num">أدخل رقم الهاتف</string>
+    <string name="invalid_phn_num">رقم الهاتف غير صحيح</string>
+    <string name="no_orders_found">لم يتم العثور على أية طلبات</string>
+    <string name="your_re_order_cart_is_empty">سلة إعادة الطلب فارغة</string>
+    <string name="noAdreess">لم يتم العثور على عنوان!</string>
+    <string name="thank_you">شكرا</string>
+    <string name="for_your_order">لطلبك</string>
+    <string name="com_stripe_publishable_key">pk_test_MnYdjiV4RxJ7xp3fdm51QVDH</string>
+    <string name="empty_coupon">قيمة رمز القسيمة فارغة</string>
+    <string name="empty_first_name">أدخل الاسم الأول</string>
+    <string name="empty_last_name">إدخال اسم آخر</string>
+    <string name="empty_address_line1">أدخل سطر العنوان 1</string>
+    <string name="empty_address_line2">أدخل سطر العنوان 2</string>
+    <string name="select_city">اختر مدينة</string>
+    <string name="empty_flat_no">أدخل مبنى / شقة رقم</string>
+    <string name="empty_community">حدد المجتمع / المنطقة</string>
+    <string name="empty_date">أدخل التاريخ</string>
+    <string name="empty_note">أدخل ملاحظة</string>
+    <string name="empty_delivery_time">حدد وقت التسليم</string>
+    <string name="select_saved_card">حدد البطاقة المحفوظة</string>
+    <string name="empty_cvv">أدخل رقم كفف</string>
+    <string name="empty_card_holder">أدخل اسم حامل البطاقة</string>
+    <string name="empty_card_num">أدخل رقم البطاقة</string>
+    <string name="invalide_card_num">أدخل رقم بطاقة صالح</string>
+    <string name="empty_expirt_dt">أدخل تاريخ انتهاء الصلاحية</string>
+    <string name="empty_expiry_yeaer">أدخل سنة انتهاء الصلاحية</string>
+    <string name="select_cod_method">حدد طريقة الدفع النقدي عند التسليم</string>
+    <string name="something_went_wrong">هناك شئ خاطئ، يرجى المحاولة فى وقت لاحق</string>
+    <string name="select_schedule_type">حدد نوع الجدول الزمني</string>
+    <string name="select_interval_days">حدد أيام الفاصل الزمني</string>
+    <string name="enter_old_pwd">أدخل كلمة المرور القديمة</string>
+    <string name="enter_new_pwd">أدخل كلمة مرور جديدة</string>
+    <string name="err_updating_cart">حدث خطأ أثناء تحديث سلة التسوق</string>
+    <string name="card_validation">يتم دعم بطاقات فيزا و ماستر كارد و أمريكان إكسبريس فقط</string>
+    <string name="discount">خصم</string>
+    <string name="ok">حسنا</string>
+    <string name="please_select_time_after_30_minutes">* يرجى تحديد الوقت بعد 30 دقيقة</string>
+    <string name="choose_delivery_time">اختيار وقت التسليم</string>
+    <string name="no_saved_cards">لا توجد بطاقات محفوظة</string>
+    <string name="select_time">حدد الوقت</string>
+    <string name="payment_type">اختر طريقة الدفع</string>
+    <string name="no_re_orders_found">لم يتم العثور على أوامر إعادة الشراء</string>
+    <string name="total_cost">التكلفة الإجمالية</string>
+    <string name="select_schedule">حدد نوع الجدول الزمني</string>
+    <string name="cant_reorder">لا يمكن وضع إعادة النظام</string>
+    <string name="select_btwn_9_to_9">يرجى تحديد الوقت بين 9 صباحا و 9 مساء</string>
+    <string name="telR">TelR</string>
+    <string name="telR_payment"> تيلر الدفع TelR </string>
+    <string name="select_telr_method">حدد طريقة الدفع تيلر</string>
+
+
+    <string-array name="re_schedule">
+        <item>أسبوعي</item>
+        <item>2 أسابيع</item>
+        <item>شهريا</item>
+        <item>أيام مخصصة</item>
+    </string-array>
+
+    <string-array name="re_schedule_days">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+</resources>

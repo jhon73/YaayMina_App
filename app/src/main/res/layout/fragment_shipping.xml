@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+   <co.ceryle.segmentedbutton.SegmentedButtonGroup
+       android:id="@+id/dynamic_drawable_group"
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:layout_margin="@dimen/left_horizontal_margin"
+       android:elevation="2dp"
+       app:sbg_animateSelector="fastOutSlowIn"
+       app:sbg_animateSelectorDuration="1000"
+       app:sbg_backgroundColor="@android:color/white"
+       app:sbg_position="0"
+       app:sbg_radius="5dp"
+       app:sbg_rippleColor="@color/mainColor"
+       app:sbg_borderColor="@color/mainColor"
+       app:sbg_borderSize="1dp"
+       app:sbg_selectorColor="@color/mainColor">
+
+      <co.ceryle.segmentedbutton.SegmentedButton
+          android:id="@+id/left_button"
+          android:layout_width="0dp"
+          android:layout_height="40dp"
+          android:layout_weight="1"
+          app:sb_text="@string/new_address"
+          app:sb_textColor="@android:color/black"
+          app:sb_textColor_onSelection="@android:color/white"
+          app:sb_drawableTint="@color/mainColor"
+          app:sb_drawableTint_onSelection="@android:color/white"/>
+
+      <co.ceryle.segmentedbutton.SegmentedButton
+          android:id="@+id/right_button"
+          android:layout_width="0dp"
+          android:layout_height="40dp"
+          android:layout_weight="1"
+          app:sb_drawableGravity="right"
+          app:sb_text="Saved Address"
+          app:sb_textColor="@android:color/black"
+          app:sb_textColor_onSelection="@android:color/white"
+          app:sb_drawableTint="@color/mainColor"
+          app:sb_drawableTint_onSelection="@android:color/white"/>
+
+   </co.ceryle.segmentedbutton.SegmentedButtonGroup>
+
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/segment_container"/>
+
+
+</LinearLayout>
